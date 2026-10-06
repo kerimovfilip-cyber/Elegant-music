@@ -1,0 +1,45 @@
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:#fff url('images/bg_repeat.jpg') repeat-x 0 0;font-family:Arial,Helvetica,sans-serif;color:#4c5d61;font-size:12px}
+a{color:#2489a0;text-decoration:none}
+a:hover{text-decoration:underline}
+.site{width:950px;margin:0 auto}
+.top-art{height:113px;background:url('images/bg_base_top.jpg') no-repeat 0 0;position:relative}
+.search-label{position:absolute;left:166px;top:39px;width:143px;text-align:center;color:#d8e8eb;font:11px Arial;text-shadow:0 1px 1px #172f34;letter-spacing:.3px}
+.header-art{height:239px;background:url('images/bg_header.jpg') no-repeat 0 0;position:relative}
+.header-title{position:absolute;left:75px;top:88px;color:#278ba0;font:28px/1 Georgia,serif;text-shadow:0 1px 0 #071f24}
+.header-caption{position:absolute;left:295px;top:151px;color:#8facb1;font:11px Arial}
+.columns{display:grid;grid-template-columns:180px 580px 190px;align-items:stretch;min-height:510px;background:url('images/bg_container_repeat.jpg') repeat-y 0 0}
+.leftbar{padding:9px 0 0 8px;border-right:1px solid #d6e0e2}
+.left-menu{width:164px}
+.left-menu a{display:block;min-height:82px;padding:17px 14px 11px 15px;color:#d7edf1;text-decoration:none;border-bottom:4px solid #195f72;background:linear-gradient(to bottom,#65aabb 0%,#3f93a6 42%,#2e7f93 100%);box-shadow:inset 0 1px rgba(255,255,255,.45)}
+.left-menu a:first-child{border-top:1px solid #5ca7b9}
+.left-menu a:hover{background:linear-gradient(to bottom,#78b6c4,#3c8fa2)}
+.left-menu strong{display:block;font-size:12px;font-weight:bold;margin-bottom:5px;text-shadow:0 1px #346c77}
+.left-menu span{display:block;font-size:10px;line-height:1.35;color:#bbdbe1}
+.content{padding:0 10px 28px;background:#fff}
+.post{min-height:390px;background:#fff;margin:0;padding:0 0 15px}
+.post h1{height:46px;margin:0;padding:18px 18px 0;background:url('images/bg_post_top.jpg') no-repeat 0 0;color:#6b858a;font:normal 17px/1 Georgia,serif}
+.post-info{padding:3px 18px 8px;color:#9aa8aa;font-size:10px}
+.post p{margin:14px 18px;line-height:1.65;font-size:12px;color:#4d5c5f}
+.post-meta{margin:20px 18px 0;padding-top:10px;border-top:1px solid #d7e2e4;font-size:10px;color:#768c90;display:flex;gap:15px}
+.post-meta span{display:flex;align-items:center;gap:4px}
+.post-meta img{width:16px;height:16px}
+.rightbar{padding:8px 9px 0 9px;background:#eef5f6;border-left:1px solid #d4dfe1}
+.widget{margin:0 0 8px;padding:0 0 8px;background:url('images/bg_sb2_line.jpg') repeat-x left bottom}
+.widget h2{margin:0 0 6px;padding:5px 4px 7px;color:#53777e;font:700 12px Arial}
+.widget a{display:block;padding:5px 5px 5px 12px;border-top:1px solid #e0eaec;background:url('images/icon_arrow1.gif') no-repeat 4px 10px;color:#6d8f96;font-size:10px}
+@media(max-width:950px){.site{width:950px;margin:0}.site{transform-origin:top left}}
+
+/* Рамка как в v9, но правая линия выровнена по рамке шапки */
+.site{box-sizing:border-box;position:relative}
+.columns{
+  grid-template-columns:180px 572px 190px;
+  border-right:8px solid #3b4546;
+}
+.site::after{
+  content:"";
+  display:block;
+  height:8px;
+  background:#3b4546;
+}
